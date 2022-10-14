@@ -15,7 +15,7 @@ st.title(playerName)
 
 
 # Player Data files
-Player=pd.read_csv('D:\Projects\CricketPlayers\Players_Test_Data.csv')
+Player=pd.read_csv('Players_Test_Data.csv')
 PlayerData=Player.loc[Player['Name']==playerName,['Date','Runs','Balls','4s','6s','SR','Opponent','Inns_Total','Result']]
 PlayerData=PlayerData.sort_values('Runs',ascending=False)
 
